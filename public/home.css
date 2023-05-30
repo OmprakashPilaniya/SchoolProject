@@ -77,7 +77,7 @@ a {
 
 
 .container {
-    background-image: url('bgimg.jpeg');
+    background-image: url('https://cdn.pixabay.com/photo/2017/12/08/18/43/notebook-3006462_1280.jpg');
     height: 120vh;
     margin-top: 1vh;
     background-repeat: no-repeat;
@@ -160,11 +160,11 @@ header label:hover {
 
 @keyframes change {
     33% {
-        background-image: url(backgroundimage.jpg);
+        background-image: url(https://cdn.pixabay.com/photo/2017/12/08/18/43/notebook-3006462_1280.jpg);
     }
 
     66% {
-        background-image: url(schoolbackground.avif);
+        background-image: url(https://cdn.pixabay.com/photo/2017/10/30/19/24/whiteboard-2903269_1280.png);
     }
 
     100% {
