@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 98vw;
+    padding: auto;
+    margin: auto;
+}
+
+.header {
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    background-color: antiquewhite;
+    padding: 0 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 4rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    z-index: 1000;
+}
+
+.nav {
+    font-size: 20px;
+    /* font-style:italic; */
+
+}
+
+li:hover {
+    color: #333;
+    background-color: wheat;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.navLink {
+    list-style: none;
+    position: relative;
+    float: left;
+    padding: 0 15px;
+    display: block;
+}
+
+.schoolTitle {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.result ul {
+    right: 0;
+    width: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 7px;
+}
+
+.result ul li {
+    width: 100%;
+    color: black;
+    padding: 8px;
+    display: none;
+
+}
+
+
+.result:hover li {
+    display: block;
+}
+
+
+.container {
+    background-image: url('bgimg.jpeg');
+    height: 120vh;
+    margin-top: 1vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: change 7s infinite ease-in-out;
+
+}
+
+.aboutschool {
+    text-align: center;
+    color: darkblue;
+    text-shadow: 10px;
+    font-size: 35px;
+
+}
+
+#menuBar {
+    display: none;
+}
+
+header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    padding-right: 5px;
+}
+
+header label:hover {
+    color: rgb(60, 162, 128);
+    background-color: whitesmoke;
+}
+
+
+@media(max-width:940px) {
+    .header label {
+        display: initial;
+    }
+
+    .schoolTitle {
+        font-size: 15px;
+    }
+
+    .navLink {
+        float: none;
+        padding: 20px;
+    }
+
+    .nav {
+        border: 1px solid black;
+        background-color: aliceblue;
+        border-radius: 10px;
+        /* height: auto; */
+        width: auto;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    .container {
+        background-repeat: repeat;
+        background-size: contain;
+    }
+
+    .result ul {
+        width: 100%;
+        margin-top: 1rem;
+        left: 0;
+    }
+
+    .result ul li {
+        padding: 10px;
+    }
+
+    #menuBar:checked~.nav {
+        display: initial;
+    }
+}
+
+@keyframes change {
+    33% {
+        background-image: url(backgroundimage.jpg);
+    }
+
+    66% {
+        background-image: url(schoolbackground.avif);
+    }
+
+    100% {
+        background-image: url(bgimg.jpeg);
+    }
+}

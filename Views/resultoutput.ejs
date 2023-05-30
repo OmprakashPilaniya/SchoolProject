@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Student Result -<%=result.name %>
+	</title>
+	<link rel="stylesheet" href="/resultoutput.css">
+</head>
+
+<body>
+	<% if(result) { %>
+		<%=result.name %>
+			<h1>Student Result - </h1>
+			<table>
+				<tr>
+					<th>Roll No.</th>
+					<th>Class</th>
+					<th>Name</th>
+					<th>Maths</th>
+					<th>English</th>
+					<th>Science</th>
+					<th>Hindi</th>
+					<th>Social Science</th>
+					<th>Total</th>
+					<th>Status</th>
+				</tr>
+				<tr>
+					<td>
+						<%=result.rollno %>
+					</td>
+					<td>
+						<%=result.class %>
+					</td>
+					<td>
+						<%=result.name %>
+					</td>
+					<td>
+						<%=result.maths %>
+					</td>
+					<td>
+						<%=result.english %>
+					</td>
+					<td>
+						<%=result.science %>
+					</td>
+					<td>
+						<%=result.hindi %>
+					</td>
+					<td>
+						<%=result.social_science %>
+					</td>
+					<td>
+						<%=result.total %>
+					</td>
+					<td class="pass">
+						<%=result.status %>
+					</td>
+				</tr>
+			</table>
+			<% } %>
+</body>
+
+</html>

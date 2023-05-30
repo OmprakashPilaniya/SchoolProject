@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Teacher Profile</title>
+  <link rel="stylesheet" href="/teacher.css">
+</head>
+
+<body>
+  <% for (let x of result) { %>
+    <% if(x) { %>
+      <div class="teacher-profile">
+        <img src=<%=x.image %> alt="Teacher Profile Image" class="teacher-image">
+        <h1 class="teacher-name">
+          <%=x.name %>
+        </h1>
+        <h2 class="teacher-subject">
+          <%=x.Subject %> Teacher
+        </h2>
+        <p class="teacher-qualification"><strong>Qualification:</strong>
+          <%=x.Qualification %>
+        </p>
+        <p class="teacher-experience"><strong>Experience:</strong>
+          <%=x.Experience %>
+        </p>
+      </div>
+      <% } %>
+        <% } %>
+</body>
+
+</html>

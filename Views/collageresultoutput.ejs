@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Student Result - John Smith</title>
+	<link rel="stylesheet" href="/collageresultoutput.css">
+</head>
+
+<body>
+	<% if(result) { %>
+		<h1>Student Result - <%=result.name %>
+		</h1>
+		<div class="container">
+			<div class="table-container">
+				<table>
+					<tr>
+						<th>Name:</th>
+						<td>
+							<%=result.name %>
+						</td>
+					</tr>
+					<tr>
+						<th>Roll No.:</th>
+						<td>
+							<%=result.rollno %>
+						</td>
+					</tr>
+					<tr>
+						<th>Stream:</th>
+						<td>
+							<%=result.stream %>
+						</td>
+					</tr>
+					<tr>
+						<th>Semester:</th>
+						<td>
+							<%=result.semester %>
+						</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<th>Subject</th>
+						<th>Marks</th>
+					</tr>
+					<tr>
+						<td>Physics</td>
+						<td>
+							<%=result.physics %>
+						</td>
+					</tr>
+					<tr>
+						<td>Chemistry</td>
+						<td>
+							<%=result.chemistry %>
+						</td>
+					</tr>
+					<tr>
+						<td>Maths</td>
+						<td>
+							<%=result.maths %>
+						</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>
+							<%=result.total %>
+						</td>
+					</tr>
+					<tr>
+						<td>Status</td>
+						<td class="pass">
+							<%=result.status %>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<% } %>
+</body>
+
+</html>
